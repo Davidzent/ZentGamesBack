@@ -15,10 +15,10 @@ import com.example.zent.module.User;
 public interface ScoreRepo extends JpaRepository<Score, Integer> {
 
 
-    Score findFirstByUserAndGameOrderByScoreDesc(User u, Game g);
-    Score findFirstByUserAndGameOrderByScoreAsc(User u, Game g);
+    Score findFirstByUserAndGameOrderByPointsDesc(User u, Game g);
+    Score findFirstByUserAndGameOrderByPointsAsc(User u, Game g);
     int countByUserAndGame(User user, Game game);
-    void deleteFirstByUserAndGameOrderByScoreDesc(User user, Game game);
+    void deleteFirstByUserAndGameOrderByPointsDesc(User user, Game game);
     List<Score> findAllByGameGameid(int g);
     List<Score> findByUser(User u);
     Page<Score> findAllByGameGameid(int g, Pageable pageable);

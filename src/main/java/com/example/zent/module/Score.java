@@ -19,7 +19,7 @@ public class Score {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int scoreid;
 
-    @Column(name = "score", nullable = false)
+    @Column(name = "points", nullable = false)
     private int points;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

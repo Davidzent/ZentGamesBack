@@ -35,13 +35,13 @@ public class ScoreService {
 
     public Score create(Score s){
         int cnt = sr.countByUserAndGame(s.getUser(),s.getGame());
-        if(cnt >= SCORES.max)sr.deleteFirstByUserAndGameOrderByScoreDesc(s.getUser(), s.getGame());
+        if(cnt >= SCORES.max)sr.deleteFirstByUserAndGameOrderByPointsDesc(s.getUser(), s.getGame());
             
         return sr.save(s);
     }
 
     public Score getGameHighScore(User u,Game g){
-        return sr.findFirstByUserAndGameOrderByScoreDesc(u,g);
+        return sr.findFirstByUserAndGameOrderByPointsDesc(u,g);
     }
 
     public List<Score> getAllScores() {

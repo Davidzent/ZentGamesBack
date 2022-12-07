@@ -16,7 +16,7 @@ test.finalizedBy jacocoTestReport
 
 sonarqube {
   properties {
-    property "sonar.projectKey", "Davidzent_ZentGames"
+    property "sonar.projectKey", "Davidzent_ZentGamesBack"
     property "sonar.organization", "davidzent"
     property "sonar.host.url", "https://sonarcloud.io"
 

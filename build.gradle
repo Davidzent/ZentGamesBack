@@ -11,8 +11,6 @@ jacocoTestReport {
         xml.enabled true
     }
 }
-test.finalizedBy jacocoTestReport
-// gradle test jacocoTestReport sonar
 
 sonarqube {
   properties {
@@ -46,8 +44,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-
-tasks.named('sonarqube').configure {
-    dependsOn test
 }

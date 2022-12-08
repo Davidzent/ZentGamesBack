@@ -64,7 +64,7 @@ DB_PASS
 ```
 
 ### build.gradle
-``
+```
 Go to src/main/resources/application.properties and change the following lines from
 
 spring.datasource.username=user
@@ -82,7 +82,5 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.database-platform=postgres
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ```
-
-
 ## Contributors
 - [David Guijosa Infante](https://github.com/Davidzent)
